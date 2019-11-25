@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading Screen</title>
+
+    <!-- Cusotop Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="loader">
+        <div class="bg"></div>
+        <h2>Loading...</h2>
+    </div>
+
+    <div class="welcome">
+        <h1>Welcome</h2>
+    </div>
+
+    <script>
+        $('.loader').show(0).delay(6000).hide(0);
+        setTimeout(function() {
+            $('.welcome').css('display', 'flex');
+        }, 6000);
+    </script>
+    
+</body>
+</html>
